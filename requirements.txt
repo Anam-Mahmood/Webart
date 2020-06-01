@@ -1,4 +1,4 @@
-requests==2.19.1
+requests==2.20.0
 Django==2.2.8
 psycopg2==2.7.5
 django_bootstrap3
