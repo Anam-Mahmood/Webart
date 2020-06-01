@@ -1,0 +1,33 @@
+img {
+    max-width: 180px;
+}
+
+input[type=file] {
+    padding: 10px;
+    background: #751C20 ;
+    color: white;
+}
+
+body {
+    background: #EEF4ED;
+}
+
+.main1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration-line: underline;
+    text-underline-position: under;
+    line-height: 40px;
+}
+
+.w3-white {
+    border-radius: 2em;
+    background-color: papayawhip !important;
+}
+
+.btn-default {
+    background-color: #751C20 !important;
+    color: #fff;
+    margin-bottom: 10px;
+}

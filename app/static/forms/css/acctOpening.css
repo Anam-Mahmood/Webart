@@ -1,0 +1,160 @@
+.optional:after {
+    content: "**";
+    color: red;
+    font-weight: bold;
+}
+
+.important:after {
+    content: "*";
+    color: red;
+    font-weight: bold;
+}
+
+.subHeading {
+    color: #000000;
+    font-size: 27px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-position: under;
+    margin-bottom: 20px;
+}
+
+.label {
+    padding-right: 10px;
+    font-size: 20px !important;
+    margin-left: 25px;
+}
+
+.important:after {
+    content: "*";
+    color: red;
+    font-weight: bold;
+}
+
+.conditionally_required:after {
+    content: "**";
+    color: red;
+    font-weight: bold;
+}
+
+.form-inline .form-check-input{
+    margin-left: 12px;
+}
+
+.form-check {
+    padding-left: 0px;
+}
+
+.mandatory {
+    color: red;
+}
+
+.form-control {
+    margin-left: 8px;
+    font-size: 18px !important;
+}
+
+.date {
+    margin-bottom: 16px;
+}
+
+.dob_input {
+    padding: 0px;
+}
+
+.blue-heading {
+    color: #16167E;
+}
+
+#lei {
+    color: #16167E;
+    margin-bottom: 0px;
+}
+
+.checkbox-style {
+    margin-bottom: 16px;
+    margin-left: 12px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#investment_objectives {
+    padding: 10px;
+}
+
+.sec10-heading {
+    margin-bottom: 0px;
+}
+
+.sec10-body {
+    margin-left: 5%;
+}
+
+.bottom-margin {
+    margin-bottom: 24px;
+}
+
+.datepicker-style {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.radio-style {
+    margin-left: 12px;
+    margin-right: 5px;
+}
+
+.radio-label {
+    padding: 0px;
+}
+
+.checkbox-choice-style {
+    margin-left: 12px;
+    margin-right: 5px;
+}
+
+.checkbox-label {
+    padding: 0px;
+}
+
+.investment_objectives_choices {
+    justify-content: left;
+}
+
+.alert-warning {
+    color: #8a6d3b !important;
+    background-color: #eef4ed !important;
+    border-color: #eef4ed !important;
+    margin: 10px 0px !important;
+    padding: 15px !important;
+}
+
+.btn {
+    font-size: 1.2em;
+}
+
+@media (min-width: 768px) {
+    #lei_number {
+        margin-left: 10%;
+    }
+
+    .investment-options {
+        margin-bottom: 16px;
+        margin-left: 8%;
+     }
+}
+
+@media (min-width: 992px) {
+    #lei_number {
+        margin-left: 0px;
+    }
+
+    .investment-options {
+        margin-bottom: 0px;
+        margin-left: 16px;
+    }
+}
+

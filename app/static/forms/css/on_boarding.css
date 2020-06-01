@@ -1,0 +1,16 @@
+body {
+    background: #00003C;
+    background-image: url('../images/CFP.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;}
+
+.table {
+    background: white;}
+
+h1 {
+    color: white;}
+
+td a {
+    display:block;
+    width:100%;}

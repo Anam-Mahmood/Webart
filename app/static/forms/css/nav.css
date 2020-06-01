@@ -1,0 +1,276 @@
+.errorlist {
+    top: 100%;
+    z-index: 5;
+    max-width: 100%;
+    padding: .5rem;
+    margin-top: .1rem;
+    font-size: 1em;
+    line-height: 1;
+    color: red;
+    border-radius: .2rem;
+}
+
+.main1 {
+    text-align:center;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-weight:bold;
+    text-decoration-line:underline;
+    text-underline-position: under;
+}
+
+.card {
+    width: 50em;
+    padding: 2em 2em 4em 14em;
+    margin: 5em 0em 5em 15em;
+    background-color: #fff;
+}
+
+.card p {
+    font-size: 20px;
+    margin: 0em 0em 0em -8em;
+    text-transform: capitalize;
+}
+
+.main {
+    border-left: 190px solid #283655;
+    padding-top: 65px;
+}
+
+.menu ul li a {
+    padding: 3em 1em 1em 2em;
+    display: block;
+}
+
+.content {
+    padding: 0em 0em 0em 0em;
+}
+
+.bg-black {
+    background-color: #000 !important;
+}
+
+.bg-blue{
+    background-color: #000 !important;
+}
+
+#title {
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+body, html {
+    height: 100%;
+}
+
+.nav-link[data-toggle].collapsed:after {
+    content: "▾";
+}
+
+.nav-link[data-toggle]:not(.collapsed):after {
+    content: "▴";
+}
+
+.nav-link u {
+    text-decoration:none;
+}
+
+.nav-link {
+    color: white;
+    font-size: 17px !important;
+}
+
+.nav-link:hover {
+    color: #BF0F0F;
+}
+
+ul.nav li a:hover,ul.nav li.active a {
+    color: #BF0F0F;
+    text-decoration: none;
+}
+
+a {
+    color:#000;
+    font-size: 15px;
+}
+
+a.active{
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidenav {
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    font-size:18px;
+}
+
+.navb {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 330px;
+}
+
+.navbar-header:hover {
+    color: #BF0F0F;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.close-sidebar {
+    background-color: darkred;
+}
+
+hr {
+    background: white;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+p {
+    padding: 1em 0em 0em 1em;
+    margin: 1em 0em 1em 2em;
+    font-size: 14px;
+    color: black;
+}
+
+.progress-bar {
+    background-color: #058422;
+}
+
+.btn1 {
+    background-color:black; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    height: 40px;
+    width: 135px;
+    opacity: 1;}
+
+.btn-info {
+    background-color: #BF0F0F !important;
+    color: #000;}
+
+button:hover {
+  opacity: 1;}
+
+.logout-btn {
+    background-color: #fff;
+    margin: 0px;
+    height: auto;
+    width: auto;
+    color: #3AA6DB;
+    font-weight: bold;
+    top: 20px;
+    right: 15px;
+}
+
+.upload {
+    margin: 0em 0em 1em 0em;
+}
+
+#logout {
+    padding: 10px 20px;
+    position: absolute;
+    margin: -0.5em 0em 0em 0em;
+    color: #000;
+    font-size: 18px;
+}
+
+.logo {
+    margin: -5em 0em 0em 0em;
+}
+
+.logo img {
+    width: 80%;
+    margin: 0px 0px 0px 10px;
+}
+
+.search {
+    padding: 6px 8px;
+    width: 19%;
+    margin-top: 3px;
+}
+
+.logo p {
+    font-size: 1.3em;
+    padding: 4px 0 4px 15px;
+    margin: 8px 0 0px 15px;
+}
+
+.btn-lg {
+    padding: .5rem 5rem;
+}
+
+.sub {
+    margin: 0em 2em 0em 0em;
+}
+@media (min-width: 768px) {
+    .navbar-header {
+        padding: 1rem;
+        font-size: 45px;
+    }
+
+    #mySidebar {
+        width: 30%;
+    }
+
+    #form-body {
+        margin-left: 0%;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-header {
+        padding: 1rem;
+        font-size: 30px;
+    }
+
+    #mySidebar {
+        width: 18%;
+    }
+
+    #form-body {
+        margin-left: 18%;
+    }
+}
+
+@media (min-width: 1450px) {
+    .top-header {
+        padding: 6em 0em 0em 0em;
+        margin: -5em 0em 0em 0em;
+    }
+
+    .navbar-header {
+        padding: 1rem;
+        font-size: 48px;
+    }
+
+    #mySidebar {
+        width: 20%;
+    }
+
+    #form-body {
+        margin-left: 15%;
+    }
+}
+

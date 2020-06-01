@@ -1,0 +1,105 @@
+{% extends 'navbar.html' %}
+{% load staticfiles %}
+
+{% block title %}
+<title>WebArt </title>
+{% endblock title %}
+
+{% block css %}
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all"/>
+<link href="{% static 'css/login.css' %}" rel="stylesheet" type="text/css" media="all"/>
+{% endblock css %}
+{% block user %}
+{% endblock user %}
+{% block content %}
+<div class="error-content">
+    {% if messages %}
+    {% for message in messages %}
+    <div class="alert {{ message.tags }} alert-dismissible" role="alert">
+        {{ message }}
+    </div>
+    {% endfor %}
+    {% endif %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-10 col-sm-10 col-md-offset-2 col-md-6 col-lg-offset-2 col-lg-4">
+                <div class="login-box">
+                    <div class="lb-header">
+                        <a id="login-box-link">Log In</a>
+                        <a id="signup-box-link">Sign Up</a>
+                    </div>
+
+                    <form class="email-login" method="post" id="email-login">
+                        {% csrf_token %}
+                        {{ form.non_field_errors }}
+                        <div class="u-form-group">
+                            {{ form.username }}
+                            {{ form.username.errors }}
+                        </div>
+                        <div class="u-form-group">
+                            {{ form.password }}
+                            {{ form.password.errors }}
+                        </div>
+                        <div class="u-form-group">
+                            <button type="submit">Log in</button>
+                        </div>
+                        <div class="u-form-group">
+<!--                            <h4><a href="{# url 'password_reset' #}" class="crowdflix-maroon">Forgot password?</a></h4>-->
+                        </div>
+                    </form>
+
+                    <form method="post" class="email-signup" id="email-signup">
+                        {% csrf_token %}
+                        {{ signupform.non_field_errors }}
+
+                        <div class="u-form-group">
+                            {{ signupform.first_name }}
+                            {{ signupform.last_name }}
+                            {{ signupform.first_name.errors }}
+                            {{ signupform.last_name.errors }}
+                        </div>
+
+
+                        <div class="u-form-group">
+                            {{ signupform.username }}
+                            {{ signupform.email }}
+                            {{ signupform.username.errors }}
+                            {{ signupform.email.errors }}
+                        </div>
+
+
+                        <div class="u-form-group">
+                            {{ signupform.password1 }}
+                            {{ signupform.password2 }}
+                            {{ signupform.password1.errors }}
+                            {{ signupform.password2.errors }}
+                        </div>
+                        <div class="u-form-group">
+                            <button type="submit" id="Signup">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+{% block js %}
+<script src="{% static 'js/login.js' %}"></script>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script type="application/x-javascript">
+addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    }
+
+    var signup="{{ signup }}"
+
+</script>
+
+{% endblock js %}

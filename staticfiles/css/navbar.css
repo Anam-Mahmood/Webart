@@ -1,0 +1,101 @@
+/* --------------------------------
+
+Primary style
+
+-------------------------------- */
+.errorlist { /*forms */
+    top: 100%;
+    z-index: 5;
+    max-width: 100%;
+    padding: 1em;
+    margin-top: .1rem;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #df2323;
+    border-radius: .2rem;
+    text-transform: capitalize;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 80%;
+}
+
+body {
+    font-size: 1.4em !important;
+    font-family: 'Merriweather', serif !important;
+    color: #3e454c;
+    background-color: #EEF4ED;
+}
+
+body::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+a {
+    color: #1784c7;
+    text-decoration: none;
+}
+
+input {
+  font-family: 'Merriweather', serif !important;
+  font-size: 1.6rem;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+.navbar-dark {
+    color: #000 !important;
+}
+
+.dropdown-menu {
+    background: #751C20 !important;
+    font-size: 1em !important;
+}
+
+.dropdown-item {
+    color:#fff !important;
+}
+
+.title {
+    font-size: 2.5em;
+    color: #FFB;
+    margin: 0.5em 0em 0em 0em;
+    text-transform: uppercase;
+}
+
+.crowdflix-background-magenta {
+    background-color: #d32866;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px !important;
+}
+
+.navbar {
+    min-height: 130px !important;
+    font-size: 18px;
+    z-index: 9999;
+    margin-bottom: 0px !important;
+}

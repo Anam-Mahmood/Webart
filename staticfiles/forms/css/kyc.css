@@ -1,0 +1,60 @@
+.form-group label,textarea {
+    color: #000;
+    font-size: 1.3em;
+}
+
+.subHeading {
+    color: #000;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    font-size:30px;
+}
+
+body {
+    background-color: #EEF4ED;
+    color: #000;
+}
+
+.btn1 {
+    margin: 0em 2em 1em 1em;
+}
+
+.question {
+    font-weight: bold !important;
+    font-size: 20px !important;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.form-inline label {
+    display: block;
+}
+.label {
+        color: #000;
+        font-size:1em;
+    }
+
+.form-inline label{
+    display: block;
+}
+
+.table-header {
+    width: 95%;
+    background-color: #751c20;
+    letter-spacing: 0.05em;
+    line-height: 35px !important;
+    color: #fff;
+}
+.table-row {
+    width: 95%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 25px;
+}
+h1,h2,h3,h4,h5,h6,p {
+    line-height:30px;
+}

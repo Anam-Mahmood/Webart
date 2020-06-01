@@ -1,0 +1,117 @@
+{% extends 'navbar-login.html' %}
+{% load staticfiles %}
+{% block title %}
+<title>WebArt </title>
+{% endblock title %}
+{% block css %}
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all"/>
+<link href="{% static 'css/margin.css' %}" rel="stylesheet" type="text/css" media="all"/>
+<link href="{% static 'css/carousel.css' %}" rel="stylesheet" type="text/css" media="all"/>
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+{% endblock css %}
+
+<!--webfont-->
+
+{% block content %}
+<div class="reviews-section">
+    <h3 class="head wow zoomIn">Inspiration</h3>
+    <div class="section-title-divider"></div>
+    <div class="row">
+        <div id="carousel-example-multi" class="carousel slide carousel-multi-item v-2" data-ride="carousel">
+
+            <!--Controls-->
+            <div class="controls-top text-center topmargin50">
+                <a class="btn-floating" href="#carousel-example-multi" data-slide="prev"><i
+                        class="fas fa-chevron-circle-left fa-3x"></i></a>
+                <a class="btn-floating" href="#carousel-example-multi" data-slide="next">
+                    <i class="fas fa-chevron-circle-right fa-3x"></i>
+                </a>
+            </div>
+            <!--/.Controls-->
+
+            <div class="carousel-inner v-2 topmargin50" role="listbox">
+                {% for post in data %}
+                {% if forloop.counter == 1 %}
+                <div class="carousel-item active">
+                    {% else %}
+                    <div class="carousel-item">
+                        {% endif %}
+                        <div class="col-xs-12 col-md-4">
+                            <div class="card mb-2">
+                                <div class="card-header text-center">
+                                    <h4 class="card-title">{{ post.name }}</h4>
+                                    <hr>
+                                    <h5 class="card-text">{{ post.artist }}</h5>
+                                </div>
+                                <div class="movie-pic text-center topmargin30">
+                                    {% block pic %}
+                                    <a href="#"><img
+                                            src="{{ MEDIA_URL }}{{ post.image }}" alt="" style="height: 300px;"/></a>
+                                    {% endblock pic %}
+                                </div>
+                                <div class="card-body text-center">
+                                    <hr>
+                                    <p class="info">Painting type:
+                                         {{ post.genre }} </p>
+                                    <hr>
+<!--                                    <a href="{# url 'signupOrLogin' signup=0  #}"-->
+<!--                                       class="card-link btn btn-maroon">Paint-->
+<!--                                    </a>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+{% block js %}
+<!-- Custom Theme files -->
+<script type="application/x-javascript">
+addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    }
+
+$('.carousel.carousel-multi-item.v-2 .carousel-item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
+  }
+  next.children(':first-child').clone().appendTo($(this));
+
+  for (var i=0;i<1;i++) {
+    next=next.next();
+    if (!next.length) {
+      next=$(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+  }
+});
+
+</script>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
+
+{% endblock js%}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" class="no-js">
+<head>
+    {% block title %}
+    <title>WebArt | Home </title>
+    {% endblock title %}
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
+    <link href="favicon.ico" rel="shortcut icon">
+    <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/ico">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link href="{% static 'css/reset.css' %}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{% static 'css/navbar.css' %}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet" type="text/css" media="all"/>
+    <link href="{% static 'css/animation.css' %}" rel="stylesheet" type="text/css" media="all"/>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .topmargin20 {
+            margin-top: 20px;
+        }
+
+
+    </style>
+    {% block css %}
+
+    {% endblock css %}
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark crowdflix-background-maroon" id="myHeader">
+    <div class="container-fluid">
+
+        <a href=""><img src="{% static 'images/web-art-logo-png.png' %}" class="wow tada" alt="WebArt Logo"
+                                         style="height: 100px;"/>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Home
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a href="{% url 'home' %}" class="dropdown-item" data-toggle="tooltip"
+                           title="Home">Home</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="{% url 'inspo_login' %}" class="dropdown-item" data-toggle="tooltip"
+                           title="Inspiration">Inspiration</a>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                </li>
+                {% block extra %}
+                {% endblock extra %}
+<!--                <li class="nav-item">-->
+<!--                    <a href="{# url 'dashboard' #}" class="nav-link" data-toggle="tooltip"-->
+<!--                       title="Dashboard">Dashboard</a>-->
+<!--                </li>-->
+
+                <li class="nav-item"><a href="/logout" class="nav-link" data-toggle="tooltip" title="Log Out">Log
+                    Out</a>
+                </li>
+                <li class="nav-item">
+                    <a id=Login class="nav-link" style="color:#fff;">
+                        <p class="capitalize"> Welcome &nbsp;{{ user.first_name }} {{ user.last_name}}</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+{% block banner %}
+{% endblock banner %}
+
+{% block content %}
+<!-- BODY Content of the page-->
+{% endblock content %}
+
+<footer class="footer">
+    <div class="container">
+        <h4 class="text-center topmargin20">Copyright &copy; &nbsp;<script>document.write(new Date().getFullYear());
+
+
+        </script>
+            All rights reserved
+        </h4>
+    </div> <!-- .container -->
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.4/js/mdb.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+
+<script src="{% static 'js/navbar/jquery-2.1.4.js' %}"></script>
+<script src="{% static 'js/navbar/jquery.menu-aim.js' %}"></script>
+<script src="{% static 'js/navbar/main.js' %}"></script>
+<script src="{% static 'js/navbar.js' %}"></script>
+<script src="{% static 'js/login.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+
+<script type="text/javascript">
+var signup=""
+
+    $(document).ready(function(){
+        $('a').each(function(){
+            if ($(this).prop('href') == window.location.href) {
+                $(this).addClass('active'); $(this).parents('li').addClass('active');
+            }
+        });
+        new WOW().init();
+    });
+
+    $('li a').tooltip(options)
+
+
+
+
+
+</script>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+{% block js %}
+{% endblock js %}
+</body>
+</html>

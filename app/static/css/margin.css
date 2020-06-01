@@ -1,0 +1,135 @@
+/*
+  Theme Name: Crowdflix
+  Author: Rubeena Ajeed and Abhinash Mainali
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    background: #EEF4ED;
+}
+.topmargin20 {
+    margin-top: 20px;
+}
+.topmargin30 {
+    margin-top: 30px;
+}
+.topmargin40 {
+    margin-top: 40px;
+}
+.topmargin50 {
+    margin-top: 50px;
+}
+.topmargin70 {
+    margin-top: 70px;
+}
+.Tmargin {
+    margin-top:150px;
+}
+.topmargin100{
+    margin-top: 100px;
+}
+.topmargin120{
+    margin-top: 120px;
+}
+.leftmargin25 {
+    margin-left:25px;
+}
+.Bmargin70 {
+    margin-bottom:70px;
+}
+.Bmargin50 {
+    margin-bottom:50px;
+}
+.Bmargin40 {
+    margin-bottom:40px;
+}
+.mainmargin {
+    margin-top:100px;
+    margin-bottom:50px;
+}
+
+.Margin50 {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}
+
+.Margin30 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.Margin20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.textcenter {
+    text-align: center;
+    font-weight: bold;
+}
+.underline {
+   text-decoration: underline;
+   text-underline-position: under;
+   line-height: 50px;
+}
+
+.italic {
+    font-style: italic;
+    font-size:1.25em;
+    margin-top: 10px;
+}
+.sections {
+    background-color: #751c20;
+    padding: 20px;
+    color: #fff !important;}
+
+.bOld {
+    font-weight: bold !important;
+}
+
+h5 {
+    font-size: 2em;
+}
+/*HEADING*/
+.h5 {
+    font-size: 2.5em !important;
+}
+
+/*grid system*/
+.wallet {
+margin: 2em 0em 0em 4em;
+}
+
+/* wallet page label */
+.label {
+    color:#000;
+    font-size:1em;
+    font-width:none;
+}
+/* upload docs page input */
+.input{
+    margin-left:35em;
+}
+
+.content-card{
+    margin: 1em 0em 2em 1em;
+}
+.card-1{
+    border-radius:2em;
+}
+
+.card-header {
+    background: #751C20 !important;
+    color: #fff;
+}
+
+.section-title-divider {
+  width: 250px;
+  height: 5px;
+  background: #751c20;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}

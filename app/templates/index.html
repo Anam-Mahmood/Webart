@@ -1,0 +1,109 @@
+{% extends 'navbar.html' %}
+{% load staticfiles %}
+{% block title %}
+<title>WebArt </title>
+{% endblock title %}
+
+{% block css %}
+<!-- Custom Theme files -->
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all"/>
+{% endblock css %}
+
+{% block banner %}
+
+{% endblock banner %}
+
+{% block content %}
+<div class="container">
+    <div class="news" style="margin-top: 80px;">
+        <div class="row">
+            <div class="col-md-6 col-xs-12 news-left-grid">
+                <h3></h3>
+                <h2>JOIN NOW! And be a part of a big art hub!</h2>
+                <h4>Easy, simple & fast.</h4>
+                <div class="row">
+                    <div class="col-md-12" style="margin-bottom: 80px;">
+                        <a href="">JOIN NOW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-xs-12 news-right-grid">
+                <h3>WebArt</h3>
+                <div class="news-grid">
+                    <p>WebArt is the one stop all for new and aspiring artists to get show case their art and get inspiration for new paintings.</p>
+                </div>
+                <div class="news-grid">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+    </div>
+</div>
+
+<!-- header-section-starts -->
+<div class="more-review" style="margin-top: 80px;">
+    <ul id="flexiselDemo2">
+        {% for post in data %}
+        <li>
+            <img src="{{ MEDIA_URL }}{{ post.image }}" class="3" alt=" {{ post.name }} ">
+<!--            <a href="{# url 'home' id=post.id #}" class="stretched-link"></a>-->
+
+        </li>
+        {% endfor %}
+
+    </ul>
+</div>
+
+{% endblock content %}
+{% block js %}
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Custom Theme files -->
+<script type="application/x-javascript">
+addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    }
+
+
+
+
+</script>
+<script type="text/javascript">
+                $(window).load(function () {
+                    $("#flexiselDemo2").flexisel({
+                        visibleItems: 4,
+                        animationSpeed: 3000,
+                        autoPlay: true,
+                        autoPlaySpeed: 3000,
+                        pauseOnHover: false,
+                        enableResponsiveBreakpoints: true,
+                        responsiveBreakpoints: {
+                            portrait: {
+                                changePoint: 480,
+                                visibleItems: 2
+                            },
+                            landscape: {
+                                changePoint: 640,
+                                visibleItems: 3
+                            },
+                            tablet: {
+                                changePoint: 768,
+                                visibleItems: 3
+                            }
+                        }
+                    });
+                });
+
+
+
+
+</script>
+<script type="text/javascript" src="{% static 'js/jquery.flexisel.js' %}"></script>
+{% endblock js %}
